@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="radar_seek_round_bg">#912b2b</color>
+    <color name="radar_seek_sel_bg">#81141b</color>
+    <color name="radar_seek_nor_bg">#C4C4C5</color>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vokevr.simpleviewer.VideoPlayerActivity">
+
+    <com.jackalopelite.JackalopeView
+        android:id="@+id/jv_root"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_video_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_video_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageView
+            android:id="@+id/iv_video_pause"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <SeekBar
+            android:id="@+id/seekbar_video_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_video_bg"
+            android:thumb="@drawable/seek_thumb" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_video_cardboard"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/iv_video_cardboard_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/iv_video_cardboard_resize"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/jv_root"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_always_landscape_portrait" />
+</RelativeLayout>
